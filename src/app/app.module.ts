@@ -8,6 +8,16 @@ import { HeaderComponent } from './header/header.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HttpService } from './data.service';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatListModule } from '@angular/material/list';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FilterPipe} from './shared/filter.pipe';
 import { MaterialModule } from './material.module';
 
 @NgModule({
@@ -17,8 +27,18 @@ import { MaterialModule } from './material.module';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatListModule,
+    FlexLayoutModule,
+
   ],
-  declarations: [AppComponent, HeaderComponent, CoursesComponent],
+
+  declarations: [AppComponent, HeaderComponent, CoursesComponent, FilterPipe],
   bootstrap: [AppComponent],
   providers: [HttpService],
 })

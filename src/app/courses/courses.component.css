@@ -1,4 +1,18 @@
 .course-card {
-  max-width: 400px;
+  
+  
+  border: 1px solid grey;
+  margin:30px;
+  display:flex;
+  flex-direction:row;
+  width: 400px;
   margin-bottom: 8px;
+  background-color: palevioletred;
+
+
 }
+mat-grid-list {
+ width: 100%;
+  
+}
+
