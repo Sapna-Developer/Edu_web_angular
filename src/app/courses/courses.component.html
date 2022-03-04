@@ -1,0 +1,17 @@
+<div class="course">
+<div class="column" *ngFor="let course of courses">
+
+<mat-card class="course-info">
+  <mat-card-header class="col">
+    <a [title]="course.Name + ' details'">
+      {{ course.Name }}
+    </a>
+  </mat-card-header>
+  <mat-card-header class="col">
+  <img class="img" [src]="course.IconUrl + ' details'">
+  </mat-card-header>
+</mat-card>
+
+</div>
+</div>
+
