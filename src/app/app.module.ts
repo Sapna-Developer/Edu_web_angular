@@ -13,11 +13,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatListModule } from '@angular/material/list';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatSelectModule} from '@angular/material/select';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FilterPipe} from './shared/filter.pipe';
+
 import { MaterialModule } from './material.module';
 
 @NgModule({
@@ -34,11 +35,11 @@ import { MaterialModule } from './material.module';
     MatIconModule,
     MatFormFieldModule,
     MatListModule,
-    FlexLayoutModule,
-
+    MatAutocompleteModule,
+    MatSelectModule,
   ],
 
-  declarations: [AppComponent, HeaderComponent, CoursesComponent, FilterPipe],
+  declarations: [AppComponent, HeaderComponent, CoursesComponent],
   bootstrap: [AppComponent],
   providers: [HttpService],
 })
