@@ -1,38 +1,4 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
+.course-card {
+  max-width: 400px;
+  margin-bottom: 8px;
 }
-.course {
-  margin: 0 -5px;
-}
-
-/*
-.column {
-  float: left;
-  padding: 10px 10px;
-  width: 40.33%;
-  margin: 20px;
-  border-left: 7px solid rgb(114, 14, 81);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #f1f1f1;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 4px;
-  align-items: left;
-  justify-items: left;
-}
-.img{
-  float: right;
-  height: 80px;
-  width: 80px;
-  top: 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-}
-.col {
-  float: left;
-  width: 43.33%;
-  padding: 5px;
-}
-*/
-
